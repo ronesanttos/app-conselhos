@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: hsl(218, 23%, 16%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: hsl(217, 19%, 24%);
+  border-radius: 10px;
+  width: 600px;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 0.7rem;
+  color: hsl(150, 100%, 66%);
+  padding: 0.6rem;
+  margin-top: 1rem;
+}
+p {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+.line {
+  margin-top: 2rem;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.line::before {
+  content: "";
+  width: 100%;
+  border-bottom: 1px solid hsl(217, 19%, 38%);
+}
+.line::after {
+  content: "";
+  width: 100%;
+  border-bottom: 1px solid hsl(217, 19%, 38%);
+}
+
+.line img {
+  width: 10px;
+  height: 10px;
+  padding: 0.6rem;
+  object-fit: cover;
+}
+
+.btn {
+  position: absolute;
+  top: 60%;
+}
+
+button {
+  width: 50px;
+  height: 50px;
+  padding: 0.6rem;
+  border-radius: 50%;
+  border: none;
+
+  background-color: hsl(150, 100%, 66%);
+}
+
+.btn img {
+  width: 60%;
+  height: 60%;
+  object-fit: cover;
+}
+
+button:hover {
+  box-shadow: hsla(150, 100%, 66%, 0.6) 2px 6px 20px 6px;
+  cursor: pointer;
+}
