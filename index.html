@@ -6,18 +6,18 @@
     <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Conselhos aleatorios</title>
+    <script src="script.js" defer></script>
   </head>
   <body>
     <div class="container">
-      <h1>ADVICE #00</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, optio. Neque dignissimos dolorum iste autem ex tempore officiis, nostrum eum ipsam tenetur, nisi inventore a eos eligendi molestias atque ullam.
-        lor
+      <h1>ADVICE #<span id="id"></span></h1>
+      <p id="advice">
       </p>
       <div class="line">
         <img src="/images/pattern-divider-desktop.svg" alt="aspas" />
       </div>
       <div class="btn">
-        <button><img src="/images/icon-dice.svg" alt="button" /></button>
+        <button onclick="randomAdvice()"><img src="/images/icon-dice.svg" alt="button" /></button>
       </div>
     </div>
   </body>
